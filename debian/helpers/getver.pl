@@ -9,7 +9,6 @@ use strict;
 
 use Dpkg::Version;
 
-my $v = Dpkg::Version->new(`dpkg-parsechangelog --count 1 | awk '\$1 == "Version:" {print \$2}'`)->version();
-$v =~ /^([0-9]+\.[0-9]+).*/;
+my $v = Dpkg::Version->new(`dpkg-parsechangelog -SVersion`)->version();
+$v =~ /^([0-9]+\.[0-9]+).*/ or die 'INVALID VERSION! (needs X.Y)';
 printf("%s\n", $1);
-

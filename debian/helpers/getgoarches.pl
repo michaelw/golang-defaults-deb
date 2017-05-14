@@ -10,5 +10,5 @@ use strict;
 use Dpkg::Control::Info;
 
 my $control = Dpkg::Control::Info->new();
-my $p = $control->get_pkg_by_name("golang-src");
+my $p = $control->get_pkg_by_name('golang-src');
 printf("%s\n", $p->{Architecture});

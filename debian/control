@@ -147,7 +147,8 @@ Description: Go programming language compiler - metapackage
 
 Package: golang-race-detector-runtime
 Architecture: amd64
-Depends: golang-${golang:GOVER}-race-detector-runtime, ${misc:Depends}
+Depends: ${misc:Depends}
+Recommends: golang-${golang:GOVER}-race-detector-runtime
 Description: Runtime support for Go's race detector
  The runtime support for the race detector is included as a binary
  file in the go source distribution so this package exists to build it

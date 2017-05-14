@@ -1,3 +1,14 @@
+golang-defaults (2:1.7~1ubuntu1instart1) precise; urgency=low
+
+  * backwards compatible dpkg-parsechangelog usage in debian/helpers/getver.pl
+  * remove golang-go.maintscript and inline in *.{prerm,preinst,postinst}, for
+    compatibility with precise
+  * add lintian override for false positive on dpkg-maintscript-helper
+  * move golang-1.7-race-detector-runtime from Depends to Recommends, as
+    it is not available on precise.
+
+ -- Michael Weber <mweber@instartlogic.com>  Wed, 30 Nov 2016 18:40:16 -0800
+
 golang-defaults (2:1.7~1ubuntu1) zesty; urgency=medium
 
   * Merge with Debian unstable. Remaining changes:

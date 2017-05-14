@@ -1,0 +1,11 @@
+golang-defaults (2:1.6-1ubuntu4) xenial; urgency=medium
+
+  * Add Breaks/Replaces of trusty golang packages.
+
+ -- Michael Hudson-Doyle <michael.hudson@canonical.com>  Tue, 29 Mar 2016 14:26:32 +1300
+
+golang-defaults (2:1.6-1ubuntu3) xenial; urgency=medium
+
+  * Initial release. (LP: #1555856)
+
+ -- Michael Hudson-Doyle <michael.hudson@canonical.com>  Thu, 03 Mar 2016 12:09:51 +1300

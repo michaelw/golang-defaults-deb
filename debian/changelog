@@ -1,3 +1,10 @@
+golang-defaults (2:1.8~1ubuntu1instart2) precise; urgency=low
+
+  * added missing files to git
+  * added missing parameter to dpkg-maintscript-helper
+
+ -- Michael Weber <mweber@instartlogic.com>  Sun, 14 May 2017 23:33:25 -0700
+
 golang-defaults (2:1.8~1ubuntu1instart1) precise; urgency=low
 
   * backwards compatible dpkg-parsechangelog usage in debian/helpers/getver.pl

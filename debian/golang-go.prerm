@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-GOVER=1.8
+GOVER=1.9
 
 if dpkg-maintscript-helper supports dir_to_symlink; then
   dpkg-maintscript-helper dir_to_symlink /usr/lib/go go-${GOVER} 2:1.6.1+2~ -- "$@"
